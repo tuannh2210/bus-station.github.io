@@ -1,0 +1,31 @@
+.ft-sub{
+	margin-top: 50px;
+	background-color: #393a3c;
+	max-height: 50px;
+	color: #ebebeb;
+	padding-top: 12px;
+
+}
+footer{
+	padding-top: 30px;
+}
+.icon-custom{
+	width: 20px;
+	height: 20px;
+}
+.custom-home-ft-contact{
+	padding-left: 18px;
+}
+#ft-home-font{
+	text-align: justify;
+	color: #959595;
+}
+#ft-logo{
+	margin-bottom: 15px;
+}
+.ft-heading{
+	margin-bottom: 15px;
+}
+.icon-ft-social{
+	margin-right: 12px;
+}
