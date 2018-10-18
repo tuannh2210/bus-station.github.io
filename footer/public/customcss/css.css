@@ -1,4 +1,4 @@
-.ft-sub{
+.main-footer-sub{
 	margin-top: 50px;
 	background-color: #393a3c;
 	max-height: 50px;
@@ -6,26 +6,26 @@
 	padding-top: 12px;
 
 }
-footer{
+.main-footer{
 	padding-top: 30px;
 }
-.icon-custom{
+.main-footer-icon{
 	width: 20px;
 	height: 20px;
 }
-.custom-home-ft-contact{
+.main-footer-contact{
 	padding-left: 18px;
 }
-#ft-home-font{
+#footer-home-font{
 	text-align: justify;
 	color: #959595;
 }
-#ft-logo{
+#footer-logo{
 	margin-bottom: 15px;
 }
-.ft-heading{
+.main-footer-heading{
 	margin-bottom: 15px;
 }
-.icon-ft-social{
+.main-footer-icon-social{
 	margin-right: 12px;
 }
