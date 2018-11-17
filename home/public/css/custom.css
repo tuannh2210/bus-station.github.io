@@ -1,3 +1,12 @@
+@font-face {
+    font-family: font;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+   font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
 header .navbar-top .icon{
 	width: 32px;
 	height: 32px;
@@ -270,7 +279,7 @@ header .navbar-bottom nav>ul>li>a:hover{
     margin-top: 60px;
     margin-bottom: 60px;
 }
-.view-all button {
+.view-all .btn{
     padding: 9px 35px;
     border: 2px solid #18377a4d;
     background: transparent;
@@ -279,6 +288,9 @@ header .navbar-bottom nav>ul>li>a:hover{
 }
 .bg-zircon{
     background: #f2f6ff;
+}
+.bg-blue{
+    background: #18377a;
 }
 /*---------------------*/
 .search-ticket{
@@ -455,9 +467,18 @@ header .navbar-bottom nav>ul>li>a:hover{
     bottom: 18px;
     z-index: 1;
  }
- .post-title h4{
+ .posts-list .post-title h4{
     font-weight: bold;
-    color: #fff
+    color: #fff;
+    transition: all .2s
+ }
+  .posts-list .post-title a:hover{
+    text-decoration: none;
+    color:#000;
+    display: block;
+}
+ .posts-list .post-title a:hover h4{
+    color:#c9be0d;
  }
  .post-meta{
     font-size: 15px;
@@ -478,11 +499,16 @@ header .navbar-bottom nav>ul>li>a:hover{
 .main-footer{
     padding-top: 30px;
 }
+.main-footer .main-footer-icon{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 10px
+}
 .main-footer a{
     margin-right: 10px;
-}
-.main-footer-contact{
-    padding-left: 18px;
 }
 #footer-home-font{
     text-align: justify;
@@ -501,4 +527,219 @@ header .navbar-bottom nav>ul>li>a:hover{
 }
 .main-footer-contact p{
     margin-left: 10px;
+}
+.input-group{
+    height: 40px;
+}
+/*-----------------------------*/
+.info-page{
+    padding: 220px 15px 10px 15px;
+    text-align: center;
+
+}
+.title-page{
+    font-weight: bolder;
+    font-size: 48px;
+    color: #fff;
+}
+.list-inline li{
+    display: inline-block;  
+    padding: 10px 10px 50px ;
+
+}
+.list-inline li a, .list-inline li{
+    color: #fff;
+}
+.list-inline li + li:before{
+    position: relative;
+    top: 0;
+    content: '\f178';
+    padding-right: 16px;
+    line-height: 22px;
+    margin-left: -6px;
+    font-size: 12px;
+    font-family: "FontAwesome";
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/*about */
+.about-us{
+    margin-top: 100px;
+    margin-bottom: 100px
+}
+.about-us .title{
+    margin: 0
+}
+.about-detail hr{
+    margin: 29px 0 34px;
+}
+.about-detail p{
+    color:#747474;
+}
+footer.bg-blue .main-footer-heading{
+        color: #fff
+}
+/*-----------*/
+.contact-form{
+    margin-top: 35px;
+    margin-bottom: 100px
+}
+.contact-row{
+    display: flex;
+    margin-bottom: 20px;
+    color: #747474;
+} 
+.contact-group .form-control{
+    height: 50px;
+    border-radius: 0;
+}
+.contact-group label{
+    margin-bottom: 6;
+}
+.contact-group .btn{
+    border-radius: 0;
+    background: #f0e319;
+    height: 50px;
+    width: 200px;
+    font-weight: bold;
+    font-size: 20px
+}
+/* sidbar contact*/
+.contact-list{
+    margin-top: 150px
+}
+.contact-item{
+    margin-bottom: 50px
+}
+
+.text-subline{
+    position: relative;
+    height: 1px;
+    padding: 0;
+    background: #c2c2c2;
+    border: none;
+}
+.text-subline:before{
+    content: '';
+    width: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    background: #3256a4;
+}
+
+.detail-contact{
+    margin-top: 20px
+} 
+
+.detail-contact i{
+    height: 34px;
+    width:34px;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    background: #3256a4;
+    display: inline-block;  
+}
+
+.detail-contact span{
+   margin-left: 15px
+}
+
+/*detail post*/
+.post-detail{
+    padding: 30px 50px;
+}
+.blog-detail .post-title{
+    font-weight: normal;
+    margin: 0 auto;
+    padding-bottom: 30px
+}
+.post-detail i:last-of-type{
+   padding-right: 7px;
+   padding-left: 20px
+}
+.info-post{
+    font-weight: bold;
+     color: #888;
+     font-size: 14px;
+     display: inline-block;
+     margin-right: 15px;
+     padding-bottom: 40px
+}
+.post-content img{
+   text-align: center;
+   margin:0 auto;
+   display: block;
+   padding: 30px 0;
+   width: 100%
+}
+.adds{
+
+}
+
+/*testimonials*/
+.owl-item .media-body{
+    display: table-cell;
+}
+.fa-quote-left{
+    color: #3256a4;
+    font-size: 30px
+}
+.testimonials{
+    padding-top: 50px;
+    padding-bottom: 100px
+}
+.testimonials .media-left{
+    padding-right: 20px
+}
+.testimonials .media-body{
+    padding-top:10px;
+    font-style: italic;
+    font-size: 18px
+}
+.testimonials .active{
+    background: inherit!important;
+}
+.testimonials-user .img-user{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.testimonials-user .img-user img{
+    border-radius: 50%;
+}
+.testimonials-user .name-user{
+    display: inline-block;
+    padding-top: 40px
+}
+.testimonials-user .name-user span{
+    position: relative;
+    top: -13px;
+    padding-left: 10px;
+    font-style: normal;
+    font-size: 16px; 
+    color: #8f8f8f
+}
+
+/*pagination*/
+.pagination{
+    padding-left: 15px;
+    padding-bottom: 100px
+}
+.pagination li{
+    margin-right: 10px;
+    border: 2px solid #18377a4d;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 0!important;
+}
+.pagination li a{
+    color:#18377a!important;
+   
+}
+.pagination li a:hover{
+    background: #f0e319;
 }
