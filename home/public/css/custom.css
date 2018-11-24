@@ -21,11 +21,11 @@ header a:hover{
 	text-decoration: none;
 }
 header .navbar-top a:hover .icon{
-background: #fff !important;
-color: #3256a4 !important;
+    background: #fff !important;
+    color: #3256a4 !important;
 }
 header .navbar-top a:hover span{
-color: #3256a4 !important;
+    color: #3256a4 !important;
 }
 header .navbar-top .icon-xs{
 	width: 34px;
@@ -36,29 +36,29 @@ header .navbar-top .icon-xs{
 	background: #c2c2c2;
 }
 header .navbar-top .right-side a:hover .hv{
-background: #375089;
-border: #375089;
-color: #fff;
+    background: #375089;
+    border: #375089;
+    color: #fff;
 }
 header .navbar-top .right-side a:hover .hv2{
-background: #0092d0;
-border: #0092d0;
-color: #fff;
+    background: #0092d0;
+    border: #0092d0;
+    color: #fff;
 }
 header .navbar-top .right-side a:hover .hv3{
-background: #ad2025;
-border: #ad2025;
-color: #fff;
+    background: #ad2025;
+    border: #ad2025;
+    color: #fff;
 }
 header .navbar-top .right-side a:hover .hv4{
-background: #5f4f3f;
-border: #5f4f3f;
-color: #fff;
+    background: #5f4f3f;
+    border: #5f4f3f;
+    color: #fff;
 }
 header .navbar-top .right-side a:hover .hv5{
-background: #cf7800;
-border: #cf7800;
-color: #fff;
+    background: #cf7800;
+    border: #cf7800;
+    color: #fff;
 }
 header .navbar-logo img{
 	max-height: 57px;
@@ -128,106 +128,114 @@ header .navbar-bottom nav>ul>li>a:hover{
     width: 100%;
     height: inherit;
 }
+.mySlides {
+    display: none
+}
 
-         .mySlides {display: none}
-         img {vertical-align: middle;}
-        
+img {
+    vertical-align: middle;
+}        
          /* Next & previous buttons */
-         .prev, .next {
-         cursor: pointer;
-         top: 50%;
-         width: auto;
-         padding: 16px;
-         margin-top: -22px;
-         color: #ccc !important;
-         font-weight: bold;
-         font-size: 18px;
-         transition: 0.6s ease;
-         border-radius: 0 3px 3px 0;
-         }
+.prev, .next {
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #ccc !important;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
          /* Position the "next button" to the right */
-         .next {
-         right: 0;
-         border-radius: 3px 0 0 3px;
-         }
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
          /* On hover, add a black background color with a little bit see-through */
-         .prev:hover, .next:hover {
-         background-color: rgba(0,0,0,0.8);
-         color: #fff !important;
-         }
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: #fff !important;
+}
         
-         /* Fading animation */
-         .fades {
-         -webkit-animation-name: fades;
-         -webkit-animation-duration: 1.5s;
-         animation-name: fades;
-         animation-duration: 1.5s;
-         }
-         @-webkit-keyframes fades {
-         from {opacity: .4} 
-         to {opacity: 1}
-         }
-         @keyframes fades {
-         from {opacity: .4} 
-         to {opacity: 1}
-         }
-         /* On smaller screens, decrease text size */
-         @media only screen and (max-width: 300px) {
-         .prev, .next,.text {font-size: 11px}
-         }
-         .header-filter{
-         	    background: rgba(24, 55, 122, 0.8)
-         }
-         .btn-search{
-         	width: 70%;
-         }
-         .header-menu{
-         	position: fixed;
-         	padding: 10px;
-         	background: linear-gradient(90deg, #3256a4 0%, #18377a 100%);
-         	top: 0px;
-    		transition: all .4s;
-         }
-         header .mySlides .text{
-         	padding: 200px 0px;
-         	margin-top: 20px;
-         }
-         header .mySlides .text>a:hover{
-         	background: #fff;
-         	color: #333 !important;
+ /* Fading animation */
+ .fades {
+    -webkit-animation-name: fades;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fades;
+    animation-duration: 1.5s;
+ }
 
-         }
-          header .mySlides .text>h3{
-         	font-size: 60px;
-         }
-          header .mySlides .text>p{
-         	font-size: 18px;
-         }
-         header .mySlides .text>a{
-         	border-color: rgba(255, 255, 255, 0.4)!important;
-         	
-         }
-         .btn-skew:after {
-    	content: '';
-   	 	position: absolute;
-    	bottom: 0;
-    	left: -10%;
-    	z-index: -1;
-    	width: 0;
-   	 	height: 120%;
-    	transition: .5s all ease;
-    	background: #fff;
-    	-webkit-transform: skewX(15deg);
-    	transform: skewX(15deg);}
-    	.btn-skew:hover:after {
-    		left: -10%;
-    		width: 120%;
-		}
-		.btn-skew{
-			position: relative;
-    		overflow: hidden;
-   			 transition:all .5s  ease;
-		}
+ @-webkit-keyframes fades {
+    from {opacity: .4} 
+    to {opacity: 1}
+ }
+
+ @keyframes fades {
+    from {opacity: .4} 
+    to {opacity: 1}
+ }
+
+ /* On smaller screens, decrease text size */
+ @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+ }
+
+ .header-filter{
+ 	    background: rgba(24, 55, 122, 0.8)
+ }
+ .btn-search{
+ 	width: 70%;
+ }
+ .header-menu{
+ 	position: fixed;
+ 	padding: 10px;
+ 	background: linear-gradient(90deg, #3256a4 0%, #18377a 100%);
+ 	top: 0px;
+	transition: all .4s;
+ }
+ header .mySlides .text{
+ 	padding: 200px 0px;
+ 	margin-top: 20px;
+ }
+ header .mySlides .text>a:hover{
+ 	background: #fff;
+ 	color: #333 !important;
+
+ }
+  header .mySlides .text>h3{
+ 	font-size: 60px;
+ }
+  header .mySlides .text>p{
+ 	font-size: 18px;
+ }
+ header .mySlides .text>a{
+ 	border-color: rgba(255, 255, 255, 0.4)!important;
+ 	
+ }
+ .btn-skew:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+    z-index: -1;
+    width: 0;
+ 	height: 120%;
+    transition: .5s all ease;
+    background: #fff;
+    -webkit-transform: skewX(15deg);
+    transform: skewX(15deg);
+}
+.btn-skew:hover:after {
+	left: -10%;
+	width: 120%;
+}
+.btn-skew{
+	position: relative;
+	overflow: hidden;
+	transition:all .5s  ease;
+}
 .dropdown-menu i{
 	opacity: 0;
 	position: absolute;
@@ -309,19 +317,23 @@ header .navbar-bottom nav>ul>li>a:hover{
     margin: 0
 }
 
-.form-search-ticket .form-control{
+.header-filter .form-control{
     height: 50px;
     border-radius: 0;
     border: 0;
 }
 
-.form-search-ticket button{
+.header-filter button{
     width: 200px;
     color: #000;
     font-weight: bold;
     background: #c9be0d;
+    border-radius: 0;
+    transition: all .3s ;
 }
-
+.header-filter button:hover{
+    opacity: .7
+}
 .form-group:last-of-type{
     display: flex;
     align-items: flex-end;
@@ -553,12 +565,16 @@ header .navbar-bottom nav>ul>li>a:hover{
 .list-inline li + li:before{
     position: relative;
     top: 0;
-    content: '\f178';
+    content: '\f054';
     padding-right: 16px;
     line-height: 22px;
     margin-left: -6px;
     font-size: 12px;
-    font-family: "FontAwesome";
+    font: normal normal normal 24px/1 "Material Design Icons";
+    font-size: inherit;
+    text-rendering: auto;
+    line-height: inherit;
+    -webkit-font-smoothing: antialiased;
     color: rgba(255, 255, 255, 0.4);
 }
 
@@ -743,3 +759,10 @@ footer.bg-blue .main-footer-heading{
 .pagination li a:hover{
     background: #f0e319;
 }
+.table th{
+    color: #393a3c;
+}
+.table td{
+    color:#8f8f8f;
+}
+
