@@ -7,6 +7,12 @@
     padding: 0;
    font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
+a{
+    text-decoration: none;
+}
+a:hover{
+     text-decoration: none;
+}
 header .navbar-top .icon{
 	width: 32px;
 	height: 32px;
@@ -259,11 +265,6 @@ img {
 .tickets{
     padding-top: 10px;
 }
-
-.container{
-    max-width: 1200px;
-    padding:    0
-}
 .container .title{
     margin-top: 50px;
     font-size: 46px;
@@ -446,7 +447,7 @@ img {
     height: 100%;
     position: relative;
 }
-.post-item::after{
+.post-item.linear::after{
     content: '';
     position: absolute;
     left: 0;
@@ -664,8 +665,11 @@ footer.bg-blue .main-footer-heading{
 }
 
 /*detail post*/
+.blog-detail{
+    padding: 30px 0;
+}
 .post-detail{
-    padding: 30px 50px;
+    padding: 0 50px;
 }
 .blog-detail .post-title{
     font-weight: normal;
@@ -691,10 +695,36 @@ footer.bg-blue .main-footer-heading{
    padding: 30px 0;
    width: 100%
 }
-.adds{
+/*sidebar detail post*/
+.post-orther-list .post-item{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.post-orther-list .post-item img{
+    height: 250px;
+}
+.post-orther-list .post-item a{
+    color: #000
+}
+.post-orther-list .post-item:hover a{
+    color: #f0e319
+}
+.post-orther-list .post-item .post-info{
+    position: absolute;
+    bottom:  -33px;
+    width: 90%;
+    margin: 0 5%;
+    background-color: #fff;
+    padding: 14px 20px 25px 20px;
+    box-sizing: border-box;
+    border-bottom: 1px dashed #f1f1f1;
 
 }
-
+.post-orther-list .post-item .post-info p{
+    font-size: 18px;
+    font-weight: bold;
+}
 /*testimonials*/
 .owl-item .media-body{
     display: table-cell;
@@ -766,3 +796,4 @@ footer.bg-blue .main-footer-heading{
     color:#8f8f8f;
 }
 
+@media (max-width:  1199.98px)
