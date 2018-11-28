@@ -360,6 +360,8 @@ img {
     align-items: center;
     justify-content: center;
     position: relative;
+     color: #fff;
+    font-size: 32px
 }
 
 .box-icon:after{
@@ -382,9 +384,13 @@ img {
     border-color: #18377a;
 }
 
-.box-icon{
-    color: #fff;
-    font-size: 32px
+@media (max-width:  778px){
+    .box-icon{
+        width: 60px ;
+        height: 60px;
+        font-size: 15px
+    }   
+
 }
 .advantages-info{
     margin-top: 30px;
@@ -796,4 +802,18 @@ footer.bg-blue .main-footer-heading{
     color:#8f8f8f;
 }
 
-@media (max-width:  1199.98px)
+/*btn menu mobile*/
+
+@media (max-width:  1199.98px){
+   .post-title h4{
+    font-size: 20px
+   }    
+}
+@media (max-width:  992px){
+   .post-title h4{
+    font-size: 15px
+   }    
+}
+@media (max-width:  768px){
+
+}
