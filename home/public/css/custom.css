@@ -550,6 +550,9 @@ img {
 .input-group{
     height: 40px;
 }
+footer.bg-blue .main-footer-heading{
+        color: #fff
+}
 /*-----------------------------*/
 .info-page{
     padding: 220px 15px 10px 15px;
@@ -588,7 +591,10 @@ img {
 /*about */
 .about-us{
     margin-top: 100px;
-    margin-bottom: 100px
+    margin-bottom: 100px;
+}
+.about {
+    display: flex;
 }
 .about-us .title{
     margin: 0
@@ -599,8 +605,83 @@ img {
 .about-detail p{
     color:#747474;
 }
-footer.bg-blue .main-footer-heading{
-        color: #fff
+.owl-item .media-body{
+    display: table-cell;
+}
+.fa-quote-left{
+    color: #3256a4;
+    font-size: 30px
+}
+.testimonials{
+    padding-top: 50px;
+    padding-bottom: 100px
+}
+.testimonials .media-left{
+    padding-right: 20px;
+    padding-top: 8px
+}
+.testimonials .media-body{
+    padding-top:10px;
+    font-style: italic;
+    font-size: 18px;
+}
+.testimonials .active{
+    background: inherit!important;
+}
+.testimonials-user .img-user{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.testimonials-user .img-user img{
+    border-radius: 50%;
+}
+.testimonials-user .name-user{
+    display: inline-block;
+    padding-top: 40px
+}
+.testimonials-user .name-user span{
+    position: relative;
+    top: -13px;
+    padding-left: 10px;
+    font-style: normal;
+    font-size: 16px; 
+    color: #8f8f8f
+}
+/*about*/
+@media (max-width:  992px){
+    .range{
+        margin-top: 50px;
+    }
+    .about{
+        display: block;
+        margin-top: 0;
+    }
+    .about > div{
+        display: block;
+        margin: auto
+    }
+    .about .title{
+        text-align: center!important;
+        padding-top: 80px;
+    }
+    .about hr{
+        margin: 29px auto 34px;
+    }
+    .about .about-media{
+        margin-top: 40px;
+    }
+}
+
+/**/
+@media (max-width: 768px){
+    .container .title{
+        font-size: 32px
+    }
+    .testimonials .media-body{
+        font-size: 17px;
+        line-height: 28px
+    }
 }
 /*-----------*/
 .contact-form{
@@ -732,48 +813,6 @@ footer.bg-blue .main-footer-heading{
     font-weight: bold;
 }
 /*testimonials*/
-.owl-item .media-body{
-    display: table-cell;
-}
-.fa-quote-left{
-    color: #3256a4;
-    font-size: 30px
-}
-.testimonials{
-    padding-top: 50px;
-    padding-bottom: 100px
-}
-.testimonials .media-left{
-    padding-right: 20px
-}
-.testimonials .media-body{
-    padding-top:10px;
-    font-style: italic;
-    font-size: 18px
-}
-.testimonials .active{
-    background: inherit!important;
-}
-.testimonials-user .img-user{
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-}
-.testimonials-user .img-user img{
-    border-radius: 50%;
-}
-.testimonials-user .name-user{
-    display: inline-block;
-    padding-top: 40px
-}
-.testimonials-user .name-user span{
-    position: relative;
-    top: -13px;
-    padding-left: 10px;
-    font-style: normal;
-    font-size: 16px; 
-    color: #8f8f8f
-}
 
 /*pagination*/
 .pagination{
@@ -804,12 +843,16 @@ footer.bg-blue .main-footer-heading{
 
 /*btn menu mobile*/
 
+
 @media (max-width:  1199.98px){
    .post-title h4{
     font-size: 20px
    }    
 }
 @media (max-width:  992px){
+    .about> div{
+        display: block
+    }
    .post-title h4{
     font-size: 15px
    }    
