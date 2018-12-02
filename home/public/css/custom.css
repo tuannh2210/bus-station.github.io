@@ -314,6 +314,21 @@ img {
     padding-top: 10px
 }
 
+.list-result{
+    position: relative;
+    height: 200px;
+    z-index: 99999999
+}
+.list-result ul{
+    max-height:200px; 
+    width:100%;
+    z-index: 999
+}
+.list-result ul{
+    overflow:hidden; 
+    overflow-y:scroll;
+}
+
 @media (max-width: 1200px){
     #header-top span{
         font-size: 14px

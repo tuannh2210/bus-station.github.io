@@ -163,12 +163,10 @@
                                         <div class="col-lg-3 col-md-6  col-sm-6 col-6"">
                                             <div class="form-group d-unset">
                                                 <label for="from" class="text-white">Điểm đến</label>
-                                                <select class="form-control">
-                                                    <option value="">Bến xe Tuyên Quang</option>
-                                                    <option value="">Bến xe Hòa Bình</option>
-                                                    <option value="">Bến xe Cà Mau</option>
-                                                    <option value="">Bến xe Hồ Chí Minh</option>
-                                                </select>
+                                                <input oninput="updateResult(this.value)" onmouseout="out()"  class="form-control"></input>
+                                                <div class="list-result" style="position: absolute;">
+                                                    <ul class="list-group result"></ul>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-3 col-md-6  col-sm-6 col-6">
