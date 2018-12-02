@@ -24,11 +24,12 @@
     window.onscroll = function() {scrollFunction()};
 
 	function scrollFunction() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        $("#header-menu").addClass('header-menu');
-       
-        
-    } else {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50 && window.innerWidth >1200) {
+      $("#header-menu").addClass('header-menu');        
+    }
+     else {
         $("#header-menu").removeClass('header-menu');
     }
+     
+    
 }
