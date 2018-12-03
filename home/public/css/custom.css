@@ -433,7 +433,8 @@ img {
         height: 50px
     }
     .header-filter form > div {
-        padding: 0
+        padding: 0;
+        margin: 0
     }
     .header-filter form > div > div{
         padding-bottom: 15px;
