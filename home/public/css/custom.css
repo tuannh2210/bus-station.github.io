@@ -428,9 +428,6 @@ img {
     .main-filter label{
         font-size: 13px
     }
-    .header-filter>div{
-        margin-left: 8.333333%;
-    }
     .header-filter button {
         width: 100%!important;
         height: 50px
