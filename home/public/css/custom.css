@@ -315,6 +315,7 @@ img {
 }
 
 .list-result{
+    display: none;
     position: relative;
     height: 200px;
     z-index: 99999999

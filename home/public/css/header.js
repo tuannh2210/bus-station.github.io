@@ -53,7 +53,7 @@ let arr = ["anagrams-of-string-(with-duplicates)", "array-concatenation", "array
         })
       }
 
-  updateResult("")
+  // updateResult("")
 
 function out(){
   let listResult = document.querySelector('.list-result');
